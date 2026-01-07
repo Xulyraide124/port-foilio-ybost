@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulysse Prevost Lacaze | Portfolio Développeur</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Curseur personnalisé */
+        html, body {
+            cursor: url('Normal.cur'), auto;
+        }
+
+        a, button, .charm, .card, .soft-card,
+        .social-button, .contact-main-btn,
+        input, textarea {
+            cursor: url('Normal.cur'), pointer !important;
+        }
+
+        /* Formulaire de contact */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px 0;
+            max-width: 400px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            padding: 10px;
+            color: #fff;
+            font-family: inherit;
+        }
+
+        .contact-form button {
+            background-color: #fde047;
+            color: #1a202c;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #fff;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+
+    <header class="hero">
+        <img src="photo.jpg" alt="Ulysse Prevost Lacaze" class="profile-img">
+        <h1>Ulysse Prevost Lacaze</h1>
+        <p class="subtitle">
+            Étudiant à Ynov Bordeaux | Développeur Backend & Infrastructures (INTRA FOR LIFE)
+        </p>
+    </header>
+
+    <section class="about-section">
+        <div class="about-card">
+            <div class="folder-header">
+                <span class="folder-tab">PROFIL_INTERNATIONAL.log</span>
+            </div>
+            <div class="about-content">
+                <p>
+                    Âgé de <strong>19 ans</strong> et étudiant à <strong>Ynov Bordeaux</strong>,
+                    passionné par l’<strong>architecture système</strong> et les structures complexes.
+                    Parcours international de <strong>5 ans en Asie (Chine & Inde)</strong>,
+                    développant une forte adaptabilité et une vision multiculturelle.
+                </p>
+                <p>
+                    <strong>Bilingue anglais</strong>, expertise <strong>Linux</strong>.
+                    Centres d’intérêt : <strong>modding</strong>, <strong>cuisine</strong>
+                    (rigueur & timing) et optimisation d’un <strong>HomeLab personnel</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH CHARMS -->
+    <section class="charms-container">
+        <div class="charms-grid">
+            <div class="charm" data-tech="csharp">
+                <div class="charm-socket">
+                    <img src="https://img.icons8.com/color/48/c-sharp-logo.png" alt="C#">
+                </div>
+                <span>C#</span>
+            </div>
+            <div class="charm" data-tech="go">
+                <div class="charm-socket">
+                    <img src="https://img.icons8.com/color/48/golang.png" alt="Go">
+                </div>
+                <span>Go</span>
+            </div>
+            <div class="charm" data-tech="js">
+                <div class="charm-socket">
+                    <img src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript">
+                </div>
+                <span>JavaScript</span>
+            </div>
+            <div class="charm" data-tech="node">
+                <div class="charm-socket">
+                    <img src="https://img.icons8.com/fluency/48/node-js.png" alt="Node.js">
+                </div>
+                <span>Node.js</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="skills-wrapper">
+
+            <div class="skills-column">
+                <h2 class="section-title">Hard Skills & Langues</h2>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Linux & Admin Système (Debian/Ubuntu)</span><span>70%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Anglais (Presque bilangue depuis 11 ans)</span><span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:95%;background:#3498db"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Backend (Go / Node.js / Express)</span><span>55%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>C# / Unity (Modding)</span><span>40%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h2 class="section-title">Soft Skills</h2>
+                <div class="soft-skills-grid">
+                    <div class="soft-card"><span class="soft-icon">🌍</span><h3>Intelligence Culturelle</h3><p>Collaboration internationale.</p></div>
+                    <div class="soft-card"><span class="soft-icon">🔍</span><h3>Autodidacte</h3><p>Apprentissage par projets.</p></div>
+                    <div class="soft-card"><span class="soft-icon">🧩</span><h3>Problem Solving</h3><p>Résolution méthodique.</p></div>
+                    <div class="soft-card"><span class="soft-icon">🍳</span><h3>Rigueur</h3><p>Code propre et structuré.</p></div>
+                    <div class="soft-card"><span class="soft-icon">🔄</span><h3>Prise de recul</h3><p>Analyse critique des solutions.</p></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <main class="grid-container">
+
+        <section class="card" data-tech="csharp">
+            <div class="badge">Modding / C#</div>
+            <h2>Temporal Tier</h2>
+            <p>Mod Hollow Knight avec dilatation temporelle via <strong>Reflection</strong>.</p>
+            <div class="tech-stack">C# | HK API | System.Reflection</div>
+            <a href="https://github.com/Xulyraide124/TiersTempsMods" class="btn-git">GitHub</a>
+        </section>
+
+        <section class="card" data-tech="go">
+            <div class="badge">Backend / Go</div>
+            <h2>Groupie Tracker</h2>
+            <p>Application web exploitant une API publique avec cartes Leaflet.</p>
+            <div class="tech-stack">Go | HTML Templates | Leaflet.js</div>
+            <a href="https://github.com/Xulyraide124/groupie-tracker" class="btn-git">GitHub</a>
+        </section>
+
+        <section class="card" data-tech="js">
+            <div class="badge">Logic / JS</div>
+            <h2>NotChess</h2>
+            <p>Moteur d’échecs complet en Vanilla JS.</p>
+            <div class="btn-group">
+                <a href="https://github.com/Xulyraide124/pas-totoalment-chess" class="btn-git">Code</a>
+                <a href="https://xulyraide124.github.io/pas-totoalment-chess/" class="btn-demo">Démo</a>
+            </div>
+        </section>
+
+        <section class="card" data-tech="node">
+            <div class="badge">Web Tool / Node</div>
+            <h2>Mini-VSCode</h2>
+            <p>Éditeur web sécurisé avec gestion du système de fichiers.</p>
+            <div class="tech-stack">Node.js | Express | Multer | EJS</div>
+            <a href="https://github.com/Xulyraide124/Mini-VSCode" class="btn-git">GitHub</a>
+        </section>
+
+        <section class="card full-width homelab">
+            <div class="badge">Infrastructure</div>
+            <h2>The Pi-Cave : HomeLab Personnel</h2>
+            <div class="pi-dashboard">
+                <div class="node">
+                    <h3>Raspberry Pi 5</h3>
+                    <ul>
+                        <li>NAS Samba (1 To)</li>
+                        <li>VPN Wireguard</li>
+                        <li>Docker : Jellyfin, Navidrome, n8n, Kiwix</li>
+                    </ul>
+                </div>
+                <div class="node">
+                    <h3>Raspberry Pi 4</h3>
+                    <ul>
+                        <li>Reverse Proxy Nginx</li>
+                        <li>Pi-hole & Home Assistant</li>
+                        <li>Serveur Minecraft (5GB)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="card full-width contact-section" id="contact">
+            <div class="badge">Contact</div>
+            <h2>Me Contacter</h2>
+
+            <div class="contact-details-list">
+                <div class="contact-item">
+                    📧 <a href="mailto:ulysseprevostlacaze0@gmail.com">ulysseprevostlacaze0@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    📞 <a href="tel:+33631555555">06 31 55 55 55</a>
+                </div>
+                <div class="contact-item">
+                    📍 Bordeaux, France
+                </div>
+            </div>
+
+            <form action="mailto:ulysseprevostlacaze0@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <input type="text" name="Nom" placeholder="Votre nom" required>
+                <input type="email" name="Email" placeholder="Votre email" required>
+                <textarea name="Message" rows="4" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <div class="contact-socials">
+                <a href="https://github.com/Xulyraide124" target="_blank" class="social-button github">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/ulysse-prevost-lacaze-475881332/" target="_blank" class="social-button linkedin">
+                    LinkedIn
+                </a>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script type="module" src="/main.js"></script>
+</body>
+</html>
